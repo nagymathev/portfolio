@@ -1,0 +1,41 @@
+.navbar {
+  z-index: 1;
+  position: sticky;
+  scroll-behavior: smooth;
+  width: 100vw;
+  margin: auto;
+  gap: 3em;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+
+    li {
+      display: block;
+      position: relative;
+      padding: 0 2em;
+      list-style: none;
+    }
+
+    /* Fade in */
+    li::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.1em;
+      background-color: #343434;
+      opacity: 0;
+      transition: opacity 300ms, transform 300ms;
+    }
+
+    li:hover::after,
+    li:focus::after {
+      opacity: 1;
+      transform: translate3d(0, 0.2em, 0);
+    }
+  }
+}
