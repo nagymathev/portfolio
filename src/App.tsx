@@ -92,8 +92,7 @@ function App() {
               <p>
                 I've been playing video games since i was little, and i thought i enjoyed it, but i realized that using
                 my creativity and building experiences from the ground up on the web available for everyone is actually
-                the thing i want to pursue. I enjoy solving complex problems while learning a lot. I've done lot of
-                HackerRank challenges.
+                the thing i want to pursue. I enjoy solving complex problems while learning a lot.
               </p>
             </div>
             <h1 className="skillsH">SKILLS</h1>
