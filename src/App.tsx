@@ -105,6 +105,7 @@ function App() {
                 <li>CSS3</li>
                 <li>SASS</li>
                 <li>Python</li>
+                <li>Git</li>
                 <li>C#</li>
                 <li>Unity</li>
                 <li>Firebase</li>
