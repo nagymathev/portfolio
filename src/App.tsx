@@ -129,7 +129,7 @@ function App() {
         <ParallaxLayer
           offset={2}
           speed={0.5}
-          factor={2}
+          factor={1}
           style={{
             display: "flex",
             justifyContent: "center",
@@ -168,6 +168,7 @@ function App() {
         >
           <div className="contact">
             <h1>CONTACT ME</h1>
+            <span>nagymathev@gmail.com</span>
           </div>
         </ParallaxLayer>
       </Parallax>
