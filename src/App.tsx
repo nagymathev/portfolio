@@ -16,17 +16,23 @@ const data = [
     image: solarSys,
     title: "Solar System made of Particles",
     description: "I used ThreeJS to built a solar system simulation where i represent the meshes with particles",
+    liveLink: "https://particle-system-peach.vercel.app/",
+    githubLink: "https://github.com/nagymathev/threejs-particle-solar-system",
   },
   {
     image: tenziesImg,
     title: "Tenzies Game",
     description: "This project taught me a lot about state in React",
+    liveLink: "https://react-tenzies-game-eight.vercel.app/",
+    githubLink: "https://github.com/nagymathev/react-tenzies-game",
   },
   {
     image: bookLogger,
     title: "A book logger app",
     description:
       "This is was my first react project, it saves user input from a form to state and displays it, and can delete items too",
+    liveLink: "https://book-logger-app.vercel.app/",
+    githubLink: "https://github.com/nagymathev/book-logger-app",
   },
 ];
 
@@ -48,8 +54,12 @@ function App() {
             </h1>
             <p>I'm a Self-Taught, Front-End developer</p>
             <div className="links">
-              <FontAwesomeIcon icon={faGithub} style={{ fontSize: "1.5em" }} />
-              <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: "1.5em" }} />
+              <a href="https://github.com/nagymathev" target="_blank">
+                <FontAwesomeIcon icon={faGithub} style={{ fontSize: "1.5em" }} />
+              </a>
+              <a href="https://www.linkedin.com/in/viktor-nagymathe-2a931a221/" target="_blank">
+                <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: "1.5em" }} />
+              </a>
             </div>
           </div>
         </ParallaxLayer>
@@ -128,7 +138,13 @@ function App() {
             <h1>PROJECTS</h1>
             <div className="grid">
               {data.map((d) => (
-                <Card image={d.image} title={d.title} description={d.description} />
+                <Card
+                  image={d.image}
+                  title={d.title}
+                  description={d.description}
+                  liveLink={d.liveLink}
+                  githubLink={d.githubLink}
+                />
               ))}
             </div>
           </div>
