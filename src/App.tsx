@@ -2,6 +2,7 @@ import "./App.scss";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Navbar from "./components/Navbar";
 import { useRef } from "react";
+import video from "./assets/img/lamp.mp4";
 
 function App() {
   const ref = useRef(null);
@@ -16,11 +17,23 @@ function App() {
           style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
         >
           <div className="hero">
-            <h1>Hi, I'm Viktor Nagymathe</h1>
-            <p>A self-taught frontend web developer, who enjoys a great UI</p>
+            <h1>
+              Hi, My name is <span>Viktor Nagymathe</span>
+            </h1>
+            <p>I'm a Self-Taught, Front-End developer</p>
           </div>
         </ParallaxLayer>
 
+        <ParallaxLayer
+          // offset={0}
+          speed={1}
+          sticky={{ start: 0, end: 3 }}
+          style={{ position: "fixed", display: "flex", justifyContent: "center", alignItems: "center", zIndex: "-1" }}
+        >
+          <video autoPlay muted loop className="video">
+            <source src={video} type="video/mp4" />
+          </video>
+        </ParallaxLayer>
         <ParallaxLayer offset={1} speed={2} style={{ backgroundColor: "#dd3f31" }} />
 
         <ParallaxLayer
@@ -34,7 +47,27 @@ function App() {
           }}
         >
           <div className="about">
-            <h1>About me</h1>
+            <h1>ABOUT ME</h1>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro ad accusamus ipsa placeat minima
+                amet enim quam. Ut perspiciatis explicabo quos blanditiis ipsa, officiis eos adipisci numquam quas,
+                possimus, veniam quibusdam! Rem aspernatur, repudiandae ut, magnam ad quidem reprehenderit distinctio
+                accusamus vero ea laborum aliquid ipsam. Impedit, molestias voluptatibus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro ad accusamus ipsa placeat minima
+                amet enim quam. Ut perspiciatis explicabo quos blanditiis ipsa, officiis eos adipisci numquam quas,
+                possimus, veniam quibusdam! Rem aspernatur, repudiandae ut, magnam ad quidem reprehenderit distinctio
+                accusamus vero ea laborum aliquid ipsam. Impedit, molestias voluptatibus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro ad accusamus ipsa placeat minima
+                amet enim quam. Ut perspiciatis explicabo quos blanditiis ipsa, officiis eos adipisci numquam quas,
+                possimus, veniam quibusdam! Rem aspernatur, repudiandae ut, magnam ad quidem reprehenderit distinctio
+                accusamus vero ea laborum aliquid ipsam. Impedit, molestias voluptatibus.
+              </p>
+            </div>
           </div>
         </ParallaxLayer>
         <ParallaxLayer
@@ -48,7 +81,8 @@ function App() {
           }}
         >
           <div className="projects">
-            <h1>Projects</h1>
+            <h1>PROJECTS</h1>
+            <div className="grid"></div>
           </div>
         </ParallaxLayer>
 
@@ -65,7 +99,7 @@ function App() {
           }}
         >
           <div className="contact">
-            <h1>Contact</h1>
+            <h1>CONTACT ME</h1>
           </div>
         </ParallaxLayer>
       </Parallax>

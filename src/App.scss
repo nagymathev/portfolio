@@ -18,12 +18,44 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2em;
+  text-align: center;
+  position: relative;
 
   h1 {
     margin-bottom: 0.5em;
+    span {
+      color: #dd3f31;
+    }
   }
 
   p {
     line-height: 1em;
   }
+}
+
+.about {
+  max-width: calc(50% + 12rem);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 1em 0;
+  }
+
+  p {
+    margin-top: 1em;
+  }
+}
+
+.projects {
+  .grid {
+    display: grid;
+  }
+}
+
+.video {
+  position: fixed;
+  z-index: -1;
 }
