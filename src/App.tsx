@@ -34,7 +34,7 @@ function App() {
             <source src={video} type="video/mp4" />
           </video>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={2} style={{ backgroundColor: "#dd3f31" }} />
+        <ParallaxLayer offset={1} speed={2} factor={1.5} style={{ backgroundColor: "#dd3f31" }} />
 
         <ParallaxLayer
           offset={1}
@@ -50,23 +50,36 @@ function App() {
             <h1>ABOUT ME</h1>
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro ad accusamus ipsa placeat minima
-                amet enim quam. Ut perspiciatis explicabo quos blanditiis ipsa, officiis eos adipisci numquam quas,
-                possimus, veniam quibusdam! Rem aspernatur, repudiandae ut, magnam ad quidem reprehenderit distinctio
-                accusamus vero ea laborum aliquid ipsam. Impedit, molestias voluptatibus.
+                I’m passionate about all things Programming. I write clean code and I genuinely love to learn. Currently
+                looking for the right opportunity to work in an environment that will help me progress in my skills.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro ad accusamus ipsa placeat minima
-                amet enim quam. Ut perspiciatis explicabo quos blanditiis ipsa, officiis eos adipisci numquam quas,
-                possimus, veniam quibusdam! Rem aspernatur, repudiandae ut, magnam ad quidem reprehenderit distinctio
-                accusamus vero ea laborum aliquid ipsam. Impedit, molestias voluptatibus.
+                I've been coding actively for 2 years now. And found my place as a Front-End developer. Being able to
+                create visually stunning experiences for the users without them having to download anything is
+                incredible. I've been coding here and there always in my life but never really stuck with something
+                until now.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro ad accusamus ipsa placeat minima
-                amet enim quam. Ut perspiciatis explicabo quos blanditiis ipsa, officiis eos adipisci numquam quas,
-                possimus, veniam quibusdam! Rem aspernatur, repudiandae ut, magnam ad quidem reprehenderit distinctio
-                accusamus vero ea laborum aliquid ipsam. Impedit, molestias voluptatibus.
+                I've been playing video games since i was little, and i thought i enjoyed it, but i realized that using
+                my creativity and building experiences from the ground up on the web available for everyone is actually
+                the thing i want to pursue. I enjoy solving complex problems while learning a lot. I've done lot of
+                HackerRank challenges.
               </p>
+            </div>
+            <h1 className="skillsH">SKILLS</h1>
+            <div className="skills">
+              <ul>
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SASS</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>Unity</li>
+                <li>Firebase</li>
+                <li>NodeJS</li>
+              </ul>
             </div>
           </div>
         </ParallaxLayer>

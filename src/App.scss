@@ -1,4 +1,5 @@
 @import "./styles/navbar.scss";
+@import "./styles/card.scss";
 
 * {
   margin: 0;
@@ -58,4 +59,20 @@ body {
 .video {
   position: fixed;
   z-index: -1;
+}
+
+.skillsH {
+  margin-top: 3em;
+}
+
+.skills {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    li {
+      list-style: none;
+    }
+  }
 }
