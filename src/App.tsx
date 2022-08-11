@@ -100,9 +100,9 @@ function App() {
                 until now.
               </p>
               <p>
-                I've been playing video games since i was little, and i thought i enjoyed it, but i realized that using
+                I've been playing video games since I was little, and I thought I enjoyed it, but I realized that using
                 my creativity and building experiences from the ground up on the web available for everyone is actually
-                the thing i want to pursue. I enjoy solving complex problems while learning a lot.
+                the thing I want to pursue. I enjoy solving complex problems while learning a lot.
               </p>
             </div>
             <h1 className="skillsH">SKILLS</h1>
