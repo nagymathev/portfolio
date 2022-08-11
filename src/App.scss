@@ -32,6 +32,14 @@ body {
   p {
     line-height: 1em;
   }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
 }
 
 .about {
@@ -51,8 +59,24 @@ body {
 }
 
 .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1em;
+  margin-bottom: auto;
+
   .grid {
+    margin-top: 2em;
     display: grid;
+    gap: 1em;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1250px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 

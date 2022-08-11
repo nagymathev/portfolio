@@ -3,6 +3,32 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Navbar from "./components/Navbar";
 import { useRef } from "react";
 import video from "./assets/img/lamp.mp4";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import Card from "./components/Card";
+
+import solarSys from "./assets/img/particle-solar-system.png";
+import tenziesImg from "./assets/img/tenzies-game.png";
+import bookLogger from "./assets/img/book-logger-app.png";
+
+const data = [
+  {
+    image: solarSys,
+    title: "Solar System made of Particles",
+    description: "I used ThreeJS to built a solar system simulation where i represent the meshes with particles",
+  },
+  {
+    image: tenziesImg,
+    title: "Tenzies Game",
+    description: "This project taught me a lot about state in React",
+  },
+  {
+    image: bookLogger,
+    title: "A book logger app",
+    description:
+      "This is was my first react project, it saves user input from a form to state and displays it, and can delete items too",
+  },
+];
 
 function App() {
   const ref = useRef(null);
@@ -21,6 +47,10 @@ function App() {
               Hi, My name is <span>Viktor Nagymathe</span>
             </h1>
             <p>I'm a Self-Taught, Front-End developer</p>
+            <div className="links">
+              <FontAwesomeIcon icon={faGithub} style={{ fontSize: "1.5em" }} />
+              <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: "1.5em" }} />
+            </div>
           </div>
         </ParallaxLayer>
 
@@ -86,6 +116,7 @@ function App() {
         <ParallaxLayer
           offset={2}
           speed={0.5}
+          factor={2}
           style={{
             display: "flex",
             justifyContent: "center",
@@ -95,7 +126,11 @@ function App() {
         >
           <div className="projects">
             <h1>PROJECTS</h1>
-            <div className="grid"></div>
+            <div className="grid">
+              {data.map((d) => (
+                <Card image={d.image} title={d.title} description={d.description} />
+              ))}
+            </div>
           </div>
         </ParallaxLayer>
 
