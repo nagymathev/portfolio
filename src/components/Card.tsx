@@ -1,4 +1,16 @@
-export default function Card({ image, title, description, liveLink, githubLink }: any) {
+export default function Card({
+  image,
+  title,
+  description,
+  liveLink,
+  githubLink,
+}: {
+  image: any;
+  title: string;
+  description: string;
+  liveLink: string;
+  githubLink: string;
+}) {
   return (
     <div className="card">
       <div className="img">

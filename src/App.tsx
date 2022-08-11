@@ -13,6 +13,7 @@ import bookLogger from "./assets/img/book-logger-app.png";
 
 const data = [
   {
+    id: 1,
     image: solarSys,
     title: "Solar System made of Particles",
     description: "I used ThreeJS to built a solar system simulation where i represent the meshes with particles",
@@ -20,6 +21,7 @@ const data = [
     githubLink: "https://github.com/nagymathev/threejs-particle-solar-system",
   },
   {
+    id: 2,
     image: tenziesImg,
     title: "Tenzies Game",
     description: "This project taught me a lot about state in React",
@@ -27,6 +29,7 @@ const data = [
     githubLink: "https://github.com/nagymathev/react-tenzies-game",
   },
   {
+    id: 3,
     image: bookLogger,
     title: "A book logger app",
     description:
@@ -139,6 +142,7 @@ function App() {
             <div className="grid">
               {data.map((d) => (
                 <Card
+                  key={d.id}
                   image={d.image}
                   title={d.title}
                   description={d.description}
